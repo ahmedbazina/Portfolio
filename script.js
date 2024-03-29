@@ -22,13 +22,13 @@ skillsBtn.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
   const toggleThemeButton = document.getElementById("toggleTheme");
   const themeIcon = document.querySelector('img[alt="theme icon"]');
-  const siteLogo = document.querySelector('img[alt="site logo"]');
+  const linktreeLogo = document.querySelector('img[alt="linktree logo"]');
   const githubLogo = document.querySelector('img[alt="github logo"]');
   const linkedinLogo = document.querySelector('img[alt="linkedin logo"]');
   const emailLogo = document.querySelector('img[alt="email logo"]');
 
   const lightLogos = {
-    site: "assets/icons/site_light.png",
+    linktree: "assets/icons/linktree_light.png",
     github: "assets/icons/github_light.png",
     linkedin: "assets/icons/linkedin_light.png",
     email: "assets/icons/email_light.png",
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const darkLogos = {
-    site: "assets/icons/site_dark.png",
+    linktree: "assets/icons/linktree_dark.png",
     github: "assets/icons/github_dark.png",
     linkedin: "assets/icons/linkedin_dark.png",
     email: "assets/icons/email_dark.png",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function setTheme(isDark) {
-    siteLogo.src = isDark ? darkLogos.site : lightLogos.site;
+    linktreeLogo.src = isDark ? darkLogos.linktree : lightLogos.linktree;
     githubLogo.src = isDark ? darkLogos.github : lightLogos.github;
     linkedinLogo.src = isDark ? darkLogos.linkedin : lightLogos.linkedin;
     emailLogo.src = isDark ? darkLogos.email : lightLogos.email;
